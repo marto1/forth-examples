@@ -1,4 +1,4 @@
-html >> \ << after a tag means next tag is embedded
+html >> \ >> after a tag means next tag is embedded
   head >>
     s"Example application" title
     s"utf-8" 'charset meta <<
