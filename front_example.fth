@@ -1,6 +1,9 @@
-: html ;
+\ actual definitions should go here
 : >> ;
 : << ;
+
+\ override default behaviour for unknown words
+: html ;
 : head ;
 : title ;
 : grid ;
@@ -29,3 +32,5 @@ html >> \ >> after a tag means next tag is embedded
       div >> div >> div \ embedding
       << << \ going 2 levels out
       div \ this div will be clild of grid
+<< \ going out of level 0 closes all remaining tags
+
